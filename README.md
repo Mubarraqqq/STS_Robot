@@ -23,12 +23,13 @@
 
 ```S2S RAG/
 ├── S2S_v8.py / S2S_v9.py # Main assistant logic
+├── .env # Environment variables (API keys, config)
 ├── requirements.txt # Python dependencies
 ├── doc_chunks.pkl # Pickled document chunks for retrieval
 ├── embeddings.npy # Pre-computed document embeddings
 ├── faiss_index.idx # FAISS index for fast similarity search
 ├── Hey-Bruce_en_windows_v3_0_0.ppn # Porcupine wake word model
-├── info.txt # Runtime instructions or metadata
+├── info.txt # Text Corpus of which the RAG system is making retrieval from 
 ```
 ---
 
@@ -115,8 +116,8 @@ Key libraries (see `requirements.txt`):
 
 ## 🔐 Disclaimer
 
-Ensure you setup your personalized porcupine model for the catch phrase 'Hey Bruce'
-
+- Ensure you setup your personalized porcupine model (.ppn file) for the catch phrase 'Hey Bruce'
+- Also make sure you have an 'info.txt' file which would serve as the text corpus knowledge base for the RAG system.   
 ---
 
 ## 🤝 Acknowledgements
