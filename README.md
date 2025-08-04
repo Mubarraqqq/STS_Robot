@@ -132,4 +132,4 @@ Key libraries (see `requirements.txt`):
 
 ## 📜 License
 
-This project is licensed under the **MIT License**. See `LICENSE` for more information.
+This project is licensed under the **MIT License**. See [`LICENSE`](https://github.com/Mubarraqqq/STS_Robot/tree/main?tab=MIT-1-ov-file#) for more information.
