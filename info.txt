@@ -1,0 +1,374 @@
+ORGANISATION NAME: NATIONAL INFORMATION TECHNOLOGY DEVELOPMENT 
+AGENCY (NITDA)
+DEPARTMENT/SUBSIDIARY NAME: NATIONAL CENTER FOR ARTIFICIAL 
+INTELLIGENCE AND ROBOTICS (NCAIR)
+
+ORGANISATION (NITDA) INFORMATION: 
+Contact Number: +2348168401851
+Email Address: info@nitda.gov.ng
+Office Address: No. 28, Port Harcourt Crescent, Off Gimbiya Street, P.M.B 564, Area 
+11 Garki, Abuja, Nigeria
+
+DEPARTMENT/DIVISION (NCAIR) INFORMATION:
+Contact Number: 08178778499 or 08178778501
+Email Address: ncair@nitda.gov.ng
+Office Address: Plot 790, Alimoh-Abu Street, Behind VIO Yard, Wuye District, Abuja, 
+Nigeria
+
+NCAIR VISION STATEMENT: To be a leading hub for Artificial Intelligence, Robotics, 
+and other Fourth Industrial Revolution Technologies in Nigeria and Africa.
+NCAIR MISSION STATEMENT: To promote research, development, and adoption of 
+AI, robotics, and 4IR technologies for economic growth, improved quality of life, and 
+global competitiveness.
+
+NATIONAL DIRECTOR OF NCAIR: 
+Dr Olubunmi Ajala
+
+Information for Students Industrial Work Experience Scheme (SIWES):
+NAME OF SUPERVISOR: Mrs. Maryam Abdullahi
+ANYTHING RELATED TO YOUR LOGBOOKS: Mrs. Maryam Abdullahi or Miss 
+Halima(HR NCAIR) or Mr. Muhammed
+WHERE TO SIGN/SUBMIT LOGBOOKS: NCAIR Office Plot 790, Alimoh-Abu Street, 
+Behind VIO Yard, Wuye District, Abuja, Nigeria.
+MORE INFORMATION ON LOGBOOKS: SIWES Students/ Interns, are expected to fill 
+up their logbooks two times a month (or every two weeks) at the NCAIR office. 
+Students can reach out to Mrs. Maryam or Miss Halima at the first floor of the NCAIR 
+building.
+
+WHAT INTERNS / SIWES ENROLEE'S WILL BE DOING AT NCAIR: A capacity Building 
+programme developed to train young Nigerians in Artificial Intelligence (AI).
+BASIC ROADMAP: All New Student's start at the Python Beginners Class, which is a 
+perquisite to the Python Advanced Class, which is also prerequisite to the Data 
+Science Beginners Class, and is a prerequisite to the Data Scienced Advanced Class 
+which finally is a prerequisite to the Embedded Systems Class. The above listed is 
+the roadmap for students who choose to enroll in this training.
+MORE ON ROAD MAP: Students can also enroll for the Product Development class, 
+and also the Product Design (UI/UX) Beginners Class which is a prerequisite to the 
+Product Design (UI/UX) Advanced Class.
+
+Information for National Youth Service Corps (NYSC/ Corpers):
+NAME OF SUPERVISOR: Mrs. Maryam Abdullahi
+WHERE TO COLLECT YOUR MONTHLY PERFORMANCE CERTIFICATE ALSO KNOWN 
+AS PC OR CLEARANCE: Youth Corpers are to first go to the NCAIR office to collect 
+and fill up their monthly Performance Certificate on the first floor from either Mrs. 
+Maryam Abdullahi, Mr. Muhammed or Miss Halima(HR NCAIR). Once done, Corpers 
+are required to go to the NITDA head office to submit the PC issued at NCAIR in 
+exchange for a coloured copy of the PC from NITDA. That is the copy that would be 
+submitted to their various NYSC CDS officer's for monthly clearance.
+
+
+MORE ABOUT EACH COURSE:
+
+
+Python Beginners Class:
+FACILITATORS: Mr. Jason Owa and Mr. Ogbodo Joseph
+TIME: Monday - Wednesday (12pm - 3pm)
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+COURSE DURATION: Four (4) Weeks for Lectures and One (1) Week for Project, Total 
+of Five (5) Weeks.
+
+REQUIREMENTS: 
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR. 
+2. Must have registered for the Python Beginners Class on the day of registration for 
+that cohort before 5:00PM on that day.
+3. Advised to have a functional Laptop.
+
+
+Python Advanced Class:
+FACILITATORS: Mr. Onipede Mubarak and Miss Cynthia Edeh
+TIME: Thursday - Saturday (12pm - 3pm)
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS: 
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed the Python Beginners Class.
+3. Must have registered for the Python Advanced Class on the day of registration for 
+that cohort before 5:00PM on that day.
+
+
+Data Science Beginners Class:
+FACILITATORS: Mr. Yisau Abdulawahab and Miss Ogechukwu Ezedozie
+TIME: Thursday - Saturday (8am - 11pm)
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed the Python Advanced Class.
+3. Must have registered for the Data Science Beginners Class on the day of 
+registration for that cohort before 5:00PM on that day.
+
+
+Data Science Advanced Class:
+FACILITATORS: Abiamamela Obi-Obuoha and Bello Muhammad Mustapha
+TIME: Monday - Wednesday (8am - 11pm)
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed the Data Science Beginners Class.
+3. Must have registered for the Data Science Advanced Class on the day of 
+registration for that cohort before 5:00PM on that day.
+
+
+Embedded Systems Class:
+FACILITATORS: Mr. Adedayo Abdulsalam and Mr. Attah MacAnthony
+TIME: Monday - Wednesday (10am - 12pm)
+VENUE: First floor, Plot 790, Alimoh-Abu Street, Behind VIO Yard, Wuye District, 
+Abuja, Nigeria
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed the Data Science Advanced Class.
+3. Must have registered for the Embedded Systems Class on the day of registration 
+for that cohort before 5:00PM on that day.
+
+
+Product Design (UI/UX) Beginners Class:
+FACILITATORS: Mr. Abdullahi Abdulrahman Adeiza
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+TIME: Monday - Wednesday (9am - 11am)
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR..
+2. Must have registered for the Product Design (UI/UX) Beginners Class on the day of 
+registration for that cohort before 5:00PM on that day. (Can be registered and taken 
+alongside with the Python Beginners Class)
+3. Advised to have a functional PC.
+
+
+Product Design (UI/UX) Advanced Class:
+FACILITATORS: Mr. Abdullahi Abdulrahman Adeiza
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+TIME: Monday - Wednesday (12pm - 2pm)
+COURSE DURATION: (4) Weeks for Lectures and One (1) Week for Project, Total of 
+Five (5) Weeks.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed the Data Science Advanced Class and the Product Design 
+Beginners Class.
+3. Must have registered for the Product Design (UI/UX) Advanced Class on the day of 
+registration for that cohort before 5:00PM on that day.
+
+
+Product Development Beginners:
+FACILITATORS: Mr. Nasir Muhammad
+VENUE: e-Government Building in the Public Service Institute of Nigeria (PSIN) in 
+Dutse, Along Kubwa road.
+TIME: Monday - Wednesday (11am - 2pm)
+COURSE DURATION: Five (5) Weeks to develop a full product.
+
+REQUIREMENTS:
+1. Must be a SIWES intern or an NYSC Corper admitted and accepted into NITDA and 
+posted to NCAIR.
+2. Must have completed all other courses including the Embedded Systems Class.
+GENERAL SCORING, ATTENDANCE AND ASSESSMENT:
+1. Attendance of less than 75% is an automatic FAIL
+2. Overall Score of less than 70% is an automatic FAIL
+3. Project is 50% of your total score, assignment and tests make up the remaining 
+50%
+4. If the Intern or Corper does not meet up to 1. & 2. They won't qulaify for certificate 
+collection. 
+
+
+INFORMATION ON ORIENTATION: Orientation is an opening programme that 
+happens every five (5) weeks at the auditorium on the first floor of the e-Government 
+Building in the Public Service Institute of Nigeria (PSIN) in Dutse, Along Kubwa road. 
+The programme occurs at the start of every new Cohort to sensitize Interns and 
+Corpers on the different programs, courses, and roadmap for the duration of their 
+Internship or Service year. Cohort Registration takes place immediately after the 
+Orientation and ends at 5:00pm that day.
+
+
+INFORMATION ON CERTIFICATES: Certificates are issued upon completion of the 
+cohort. Certificates are usually sent to the interns/Corpers' email address so they 
+must ensure to put in their correct addresses during their registration.
+If the certificate is specific to a course, the Intern or Corper can ask the any 
+FACILITATOR taking that course for deeper information concerning the certificate.
+
+
+REQUIRED CRITERIA TO QUALIFY FOR CERTIFICATE COLLECTION:
+As an Intern or Corper, you must meet up with the General 
+SOME FREQUENTLY ASKED QUESTIONS AND ANSWERS:
+1. WHAT HAPPENS IF I MISS REGISTRATION?: If you miss registration day, or you 
+register after 5:00pm on the registration day, you have to wait for the next Cohort 
+registration.
+2. CAN I REGISTER MULTIPLE COURSES AT THE SAME TIME: Mostly, you CANNOT!: 
+The only courses that can be taken/registered at the same time is Python Beginners 
+and the Product Design (UI/UX) Beginners.
+3. WHEN IS THE NEXT ORIENTATION PROGRAMME: Stay tunned to the NCAIR 
+INTERS (SIWES/CORP) WhatsApp Group chat as the date will be announced there.
+4. WHERE IS MRS. MARYAM'S OFFICE: It is on the first floor of the NCAIR Building at 
+Plot 790, Alimoh-Abu Street, Behind VIO Yard, Wuye District, Abuja, Nigeria.
+5. WHERE CAN I SIGN MY LOGBOOK: At the first floor of the NCAIR Building Plot 
+790, Alimoh-Abu Street, Behind VIO Yard, Wuye District, Abuja, Nigeria.
+
+Inters/NYSC Corpers: Should refer to the FACILITATORS concerning Course Specific Questions.
+
+
+National Center for Artificial Intelligence and Robotics
+(NCAIR)
+ORGANIZATION (NITDA) INFORMATION:
+The National Information Technology Development Agency (NITDA) has a department or
+subsidiary named the National Center for Artificial Intelligence and Robotics (NCAIR).
+
+DEPARTMENT/DIVISION (NCAIR) INFORMATION:
+NCAIR's office is located at Plot 790, Cadastral Zone, Wuye District, Abuja. You can reach them
+via contact numbers 08178778499 or 08178778501, and their email address is
+ncair@nitda.gov.ng. NCAIR's vision is to be a leading hub for Artificial Intelligence, Robotics,
+and other Fourth Industrial Revolution Technologies in Nigeria and Africa. Its mission is to
+promote research, development, and adoption of AI, robotics, and 4IR technologies for
+economic growth, improved quality of life, and global competitiveness.
+
+ABOUT NCAIR:
+The National Centre for Artificial Intelligence and Robotics (NCAIR) functions as a special
+purpose vehicle under NITDA. It was established with the goal of promoting research and
+development in emerging technologies and their practical application within areas of Nigerian
+national interest. The facility, which includes a modern digital fabrication laboratory (FabLab),
+was commissioned on November 13th, 2020. It is co-located with the Office for Nigerian Digital
+Innovation (ONDI) at Plot 790, Cadastral Zone, Wuye District, Abuja. NCAIR's primary focus
+areas include Artificial Intelligence (AI), Robotics and Drones, Internet of Things (IoT), and other
+emerging technologies. The center aims to transform Nigeria's digital economy in line with the
+National Digital Economy Policy and Strategy (NDEPS) , and to foster a thriving ecosystem for
+innovation-driven entrepreneurship (IDE), job creation, and national development.
+
+CORE VALUES:
+NCAIR operates on key core values. Innovation is central, fostering an environment for
+trailblazing ideas and solutions. Collaboration is highly valued, as the center actively builds
+partnerships and connections to amplify its impact. Inclusiveness is another crucial value, with a
+commitment to achieving an equitable society through technology. Finally, entrepreneurship is a
+core principle, enabling technology commercialization and the establishment of new enterprises.
+
+STRATEGIC PRIORITIES:
+NCAIR has several strategic priorities guiding its operations. In Research and Development
+(R&D), the objective is to become a leading AI research center that advances scientific
+discoveries and innovative applications for national development. The Skills and Capacity
+Building (SCB) priority focuses on developing a world-class AI talent pool and ecosystem to
+power Nigeria's digital future. Through Technology Transfer and Commercialization (TTC),
+NCAIR aims to accelerate the adoption and commercialization of AI innovations for economic
+growth and social impact. Policy and Ethics (PE) is another key area, working to shape AI policy
+and governance to ensure an inclusive, ethical, and sustainable AI ecosystem. Lastly,
+International Engagement (IE) seeks to position Nigeria as a leader in AI development through
+strategic global collaborations.
+
+KEY RESEARCH FOCUS AREAS:
+NCAIR's key research focus areas encompass a broad spectrum of AI and related technologies.
+These include Natural Language Processing, Computer Vision, Robotics, Machine Learning,
+and Data Science. The center also specializes in applications of AI in specific sectors such as
+Health AI, Agriculture AI, Education AI, Finance AI, and Trade AI. Furthermore, its research
+extends to Unmanned Aerial Vehicles (UAVs), Internet of Things (IoT), Blockchain, and Security
+AI.
+
+CURRENT INFRASTRUCTURE:
+The Centre utilizes the existing national infrastructure provided by Galaxy Backbone. Their
+current Cloud Capacity is sufficient to enable them to commence pilot AI projects within their
+priority research areas.
+
+DR. OLUBUNMI AJALA - NATIONAL DIRECTOR OF NCAIR: 
+Dr. Olubunmi Ajala serves as the National Director of NCAIR. He is a Data Scientist and
+Economist with extensive experience in national strategy, policies, and programs related to
+Artificial Intelligence (AI), Data, Research, and Digital Public Infrastructure. Dr. Ajala is known
+for leveraging research and data-driven insights to develop strategies that enhance productivity
+through digital technologies. Previously, he lectured and held the position of Learning Analytics
+Lead at the School of Economics, Finance and Accounting, Coventry University (UK) , and also
+facilitated numerous Data Science trainings in Nigeria and Namibia. He is a member of the
+International AI Safety Team, contributing to the "State of the Science Report," and was part of
+the Technological Innovation Group of the AU-EU Research and Innovation Advisory Group for
+"Mainstreaming Research and Innovation in Africa-European Cooperation". Dr. Ajala is the lead
+author of an article that utilized Twitter data to analyze public sentiments regarding the Africa
+Free Continental Free Trade Agreement (AfCFTA) and possesses extensive experience in
+handling both structured and unstructured data, as well as developing Machine Learning
+algorithms.
+
+WORK DONE SO FAR:
+NCAIR has undertaken several significant initiatives in Artificial Intelligence & Robotics. They
+are actively fine-tuning Llama2 for specific Nigerian purposes, with an initial focus on Nigerian
+trade, utilizing a Nigerian trade dataset spanning 20 years and Social Connectedness Data from
+Meta. The plan is to open-source the next version of Llama 2, making it freely available for
+research and commercial use, including model weights and starting code for pretrained and
+conversational fine-tuned versions. NCAIR is also employing Machine Learning to identify top AI
+researchers of Nigerian descent by analyzing academic publications, conference presentations,
+patents, citation counts, collaboration networks, publication venues, and work impact to pinpoint
+significant contributors to the AI field. In collaboration with Design Lab (CcHUB), NCAIR
+proposes leveraging Meta Llama 3 LLM to create a digital platform for verifying and validating
+products within Nigeria's pharmaceutical value chain, addressing issues like drug counterfeiting,
+inefficient distribution, and real-time data aggregation. The National Artificial Intelligence
+Research Scheme is a grant program supporting 45 AI researchers in areas such as
+Agriculture, Education, Healthcare, Utility, and Sustainability. Additionally, NCAIR has granted
+funding for 10 demonstration projects focused on applying Fourth Industrial Revolution
+Technologies to Agriculture. Finally, the AI Collective, a community of Artificial Intelligence
+experts of Nigerian descent, is dedicated to supporting the national AI agenda.
+
+AI FUND IN COLLABORATION WITH GOOGLE:
+NCAIR, in collaboration with Google, has launched an AI Fund aimed at supporting innovation
+in Artificial Intelligence within Nigeria. The fund's purpose is to unlock AI's full potential in Nigeria
+by nurturing the next generation of AI-powered startups, recognizing AI's global role in
+transforming industries, driving innovation, efficiency, economic growth, and new business
+models. Nigeria, with Africa's largest economy, a vibrant technology ecosystem, and a youthful,
+tech-savvy population, is poised for growth; the fund addresses funding constraints and
+resource limitations faced by Nigerian startups. The N100 million fund will empower 10 Nigerian
+startups that leverage AI in their technology products. These startups will receive financial
+support through grant funding of up to ₦10 million each , access to Google AI tools, resources,
+and mentorship from Google engineers for technical expertise , and connection to Google's
+extensive network with opportunities for global exposure. The virtual program will run for 6
+weeks, from October 2024 to November 2024. Selected startups will focus on diverse areas
+such as predicting demand and matching blood types for Africa’s blood supply needs (AI-driven)
+, centralizing and personalizing customer engagement for businesses (AI-driven platform) ,
+enabling seamless text-to-speech and speech-to-text AI functionality in 13 languages across
+underserved regions , supporting livestock farmers with disease detection and climate control
+(AI-driven) , streamlining lending operations using AI , connecting global companies with vetted
+African tech talent through AI-driven pre-classification and job matching , optimizing sustainable
+power for underserved users (AI-powered energy management) , AI-driven healthcare
+documentation with tailored tools for Nigerian doctors , providing contextual security insights for
+African communities (AI-driven) , and streamlining credit analysis for MSMEs using AI.
+
+AI COLLECTIVE:
+The Nigerian AI Collective envisions a future where Nigeria effectively utilizes the power of AI to
+foster economic prosperity, innovation, and social development, thereby establishing itself as a
+leading force in AI for global good, both on the African continent and internationally. The
+objectives of this collective include knowledge sharing and collaboration, facilitating a platform
+for AI professionals, researchers, policymakers, and industry leaders to exchange insights, best
+practices, and research findings, and fostering cooperation among academia, industry, and
+government agencies to strengthen the AI ecosystem. Capacity building is another objective,
+involving the development and implementation of training programs, workshops, and seminars
+to enhance the skills of AI practitioners and enthusiasts, and encouraging continuous learning to
+keep pace with advancements in AI technologies. The collective also aims to promote
+innovation and research by supporting AI-focused research and development initiatives that
+address local challenges and contribute to global AI knowledge, and by encouraging the
+creation of AI startups and incubators to drive innovation across various sectors. Policy
+advocacy is a crucial aspect, involving collaboration with policymakers to develop AI-friendly
+regulations and policies that create a conducive environment for AI research, development, and
+application, while also advocating for ethical AI practices and responsible use of AI technologies
+in alignment with global standards. Finally, international collaboration is a key objective, focusing
+on establishing partnerships with international AI organizations, institutions, and industry players
+to leverage global expertise and resources, and to position Nigeria as a critical player in the
+international AI community.
+
+CONTACT INFORMATION
+NCAIR can be contacted at their address: Plot 790, Alimoh-Abu Street, Behind VIO Yard, Wuye
+District, Abuja, Nigeria. Their phone numbers are 08178778499 and 08178778501, and their
+email is ncair@nitda.gov.ng
+

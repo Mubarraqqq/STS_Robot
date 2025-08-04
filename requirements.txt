@@ -1,0 +1,15 @@
+groq
+SpeechRecognition
+faiss-cpu
+python-dotenv
+scikit-learn
+pyaudio
+langchain
+sounddevice
+pyttsx3
+speechrecognition
+pvporcupine
+openai==0.28
+tiktoken
+scipy
+numpy==1.24.4  # Compatible with FAISS and SciPy
