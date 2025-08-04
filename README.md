@@ -1,15 +1,12 @@
 <div align="center">
-    <h1>Ground Speed Prediction of a Boeing Airplane</h1>
-    <strong>An end-to-end machine learning project encompasses tasks such as data cleaning, augmentation, wrangling, modeling, deployment, and evaluation of solutions to establish a functional system</strong>
-    <img src="deploy.png" width='650' /> 
+    <h1> 🗣️ Speech-to-Speech Retrieval-Augmented Assistant (Bruce)</h1>
+    <img src="S2S_image.png" width='650' /> 
 </div>
 
 <br>
+<br>
 
-
-# 🗣️ Speech-to-Speech Retrieval-Augmented Assistant (S2S RAG)
-
-**S2S RAG** is an intelligent voice assistant pipeline that listens, understands, retrieves, reasons, and speaks — enabling seamless speech-to-speech interaction powered by Retrieval-Augmented Generation (RAG), whisper-based transcription, and wake-word activation via Porcupine.
+**Bruce** is an intelligent voice assistant pipeline that listens, understands, retrieves, reasons, and speaks — enabling seamless speech-to-speech interaction powered by Retrieval-Augmented Generation (RAG), whisper-based transcription, and wake-word activation via Porcupine.
 
 ---
 
