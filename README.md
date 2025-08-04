@@ -1,6 +1,6 @@
 <div align="center">
     <h1> 🗣️ Speech-to-Speech Retrieval-Augmented Assistant (Bruce)</h1>
-    <img src="S2S_image.png" width='650' /> 
+    <img src="S2S_IMG.png" width='650' /> 
 </div>
 
 <br>
