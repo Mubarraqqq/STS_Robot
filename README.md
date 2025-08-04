@@ -29,7 +29,8 @@
 ├── embeddings.npy # Pre-computed document embeddings
 ├── faiss_index.idx # FAISS index for fast similarity search
 ├── Hey-Bruce_en_windows_v3_0_0.ppn # Porcupine wake word model
-├── info.txt # Text Corpus of which the RAG system is making retrieval from 
+├── info.txt # Text Corpus of which the RAG system wpuld make retrieval from 
+
 ```
 ---
 
