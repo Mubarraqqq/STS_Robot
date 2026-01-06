@@ -102,24 +102,46 @@ class VoiceAssistant:
     def _initialize_porcupine(self):
         """Initialize Porcupine wake word detector."""
         try:
-            # Cross-platform path handling
+            # Try to load custom wake word model
             wake_word_model = os.path.join(
                 os.path.dirname(__file__),
                 "Hey-Bruce_en_windows_v3_0_0.ppn"
             )
             
-            # If the file doesn't exist at the expected location, try alternatives
-            if not os.path.exists(wake_word_model):
-                wake_word_model = "Hey-Bruce_en_windows_v3_0_0.ppn"
-            
-            self.porcupine = pvporcupine.create(
-                access_key=os.getenv('PORCUPINE_API_KEY'),
-                keyword_paths=[wake_word_model]
-            )
-            logger.info("✅ Porcupine wake word detector initialized")
+            # Check if custom model exists
+            if os.path.exists(wake_word_model):
+                try:
+                    self.porcupine = pvporcupine.create(
+                        access_key=os.getenv('PORCUPINE_API_KEY'),
+                        keyword_paths=[wake_word_model]
+                    )
+                    logger.info("✅ Porcupine initialized with custom 'Hey Bruce' model")
+                except Exception as custom_error:
+                    logger.warning(f"⚠️ Custom model failed ({custom_error}), trying built-in keywords...")
+                    # Fallback to built-in "hey google" keyword
+                    self._initialize_porcupine_builtin()
+            else:
+                # Custom model doesn't exist, use built-in
+                logger.info("ℹ️ Custom wake word model not found, using built-in 'hey google'")
+                self._initialize_porcupine_builtin()
             
         except Exception as e:
             logger.error(f"❌ Failed to initialize Porcupine: {e}")
+            raise
+    
+    def _initialize_porcupine_builtin(self):
+        """Initialize Porcupine with built-in keyword."""
+        try:
+            self.porcupine = pvporcupine.create(
+                access_key=os.getenv('PORCUPINE_API_KEY'),
+                keywords=["google"]  # Built-in keyword
+            )
+            logger.info("✅ Porcupine initialized with built-in 'hey google' keyword")
+            logger.info("   📝 To use 'Hey Bruce', download the macOS .ppn file from:")
+            logger.info("      https://console.picovoice.ai/")
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to initialize Porcupine with built-in keywords: {e}")
             raise
     
     def _configure_tts(self):
@@ -371,7 +393,8 @@ class VoiceAssistant:
     
     def listen_for_wake_word(self):
         """Listen for wake word and start conversation when detected."""
-        logger.info("👂 Voice Assistant started. Listening for 'Hey Bruce'...")
+        wake_word = "Hey Bruce" if hasattr(self.porcupine, 'keywords') and 'bruce' in str(self.porcupine.keywords).lower() else "Hey Google"
+        logger.info(f"👂 Voice Assistant started. Listening for '{wake_word}'...")
         
         try:
             with sd.RawInputStream(
@@ -391,7 +414,7 @@ class VoiceAssistant:
                         result = self.porcupine.process(pcm)
                         
                         if result >= 0:
-                            logger.info("🎯 Wake word 'Hey Bruce' detected!")
+                            logger.info("🎯 Wake word detected!")
                             self.start_conversation()
                     else:
                         time.sleep(0.1)
