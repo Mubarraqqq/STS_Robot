@@ -100,49 +100,45 @@ class VoiceAssistant:
         self.last_interaction_time = None
     
     def _initialize_porcupine(self):
-        """Initialize Porcupine wake word detector."""
+        """Initialize Porcupine wake word detector (optional)."""
         try:
-            # Try to load custom wake word model
-            wake_word_model = os.path.join(
-                os.path.dirname(__file__),
+            # Look for macOS version of Hey Bruce model
+            # You can get this from https://console.picovoice.ai/
+            wake_word_models = [
+                "Hey-Bruce_en_macos_v3_0_0.ppn",
+                "Hey-Bruce_en_v3_0_0.ppn",
                 "Hey-Bruce_en_windows_v3_0_0.ppn"
-            )
+            ]
             
-            # Check if custom model exists
-            if os.path.exists(wake_word_model):
+            porcupine_model = None
+            for model in wake_word_models:
+                path = os.path.join(os.path.dirname(__file__), model)
+                if os.path.exists(path):
+                    porcupine_model = path
+                    break
+            
+            if porcupine_model:
                 try:
                     self.porcupine = pvporcupine.create(
                         access_key=os.getenv('PORCUPINE_API_KEY'),
-                        keyword_paths=[wake_word_model]
+                        keyword_paths=[porcupine_model]
                     )
-                    logger.info("✅ Porcupine initialized with custom 'Hey Bruce' model")
-                except Exception as custom_error:
-                    logger.warning(f"⚠️ Custom model failed ({custom_error}), trying built-in keywords...")
-                    # Fallback to built-in "hey google" keyword
-                    self._initialize_porcupine_builtin()
-            else:
-                # Custom model doesn't exist, use built-in
-                logger.info("ℹ️ Custom wake word model not found, using built-in 'hey google'")
-                self._initialize_porcupine_builtin()
+                    logger.info("✅ Porcupine initialized with 'Hey Bruce' model")
+                    return  # Success
+                except Exception as e:
+                    logger.warning(f"⚠️ 'Hey Bruce' model failed: {e}")
             
-        except Exception as e:
-            logger.error(f"❌ Failed to initialize Porcupine: {e}")
-            raise
-    
-    def _initialize_porcupine_builtin(self):
-        """Initialize Porcupine with built-in keyword."""
-        try:
-            self.porcupine = pvporcupine.create(
-                access_key=os.getenv('PORCUPINE_API_KEY'),
-                keywords=["google"]  # Built-in keyword
-            )
-            logger.info("✅ Porcupine initialized with built-in 'hey google' keyword")
-            logger.info("   📝 To use 'Hey Bruce', download the macOS .ppn file from:")
+            # If we get here, wake word detection is not available
+            logger.warning("⚠️ Wake word detection unavailable")
+            logger.info("   📝 To enable 'Hey Bruce', download the macOS .ppn file from:")
             logger.info("      https://console.picovoice.ai/")
+            logger.info("   📝 Place it in: /Users/mubaraq/STS_Robot/")
+            logger.info("   💡 System will run in MANUAL mode - press Enter to start conversation")
+            self.porcupine = None
             
         except Exception as e:
-            logger.error(f"❌ Failed to initialize Porcupine with built-in keywords: {e}")
-            raise
+            logger.warning(f"⚠️ Porcupine initialization skipped: {e}")
+            self.porcupine = None
     
     def _configure_tts(self):
         """Configure text-to-speech settings."""
@@ -392,10 +388,17 @@ class VoiceAssistant:
         logger.info("🛑 Conversation ended")
     
     def listen_for_wake_word(self):
-        """Listen for wake word and start conversation when detected."""
-        wake_word = "Hey Bruce" if hasattr(self.porcupine, 'keywords') and 'bruce' in str(self.porcupine.keywords).lower() else "Hey Google"
-        logger.info(f"👂 Voice Assistant started. Listening for '{wake_word}'...")
-        
+        """Listen for wake word or prompt for manual start."""
+        if self.porcupine:
+            logger.info("👂 Voice Assistant started. Listening for 'Hey Bruce'...")
+            self._listen_for_wake_word_porcupine()
+        else:
+            logger.info("👂 Voice Assistant started (MANUAL MODE)")
+            logger.info("   Press ENTER to start a conversation")
+            self._listen_for_manual_start()
+    
+    def _listen_for_wake_word_porcupine(self):
+        """Listen for wake word using Porcupine."""
         try:
             with sd.RawInputStream(
                 samplerate=self.porcupine.sample_rate,
@@ -423,6 +426,24 @@ class VoiceAssistant:
             logger.info("⛔ Voice assistant stopped by user")
         except Exception as e:
             logger.error(f"❌ Wake word detection error: {e}")
+        finally:
+            self.cleanup()
+    
+    def _listen_for_manual_start(self):
+        """Listen for manual start (press Enter to begin)."""
+        try:
+            while True:
+                if not self.in_conversation:
+                    input()  # Wait for Enter key
+                    logger.info("🎯 Starting conversation...")
+                    self.start_conversation()
+                else:
+                    time.sleep(0.1)
+                        
+        except KeyboardInterrupt:
+            logger.info("⛔ Voice assistant stopped by user")
+        except Exception as e:
+            logger.error(f"❌ Error: {e}")
         finally:
             self.cleanup()
     
