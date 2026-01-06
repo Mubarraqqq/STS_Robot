@@ -8,7 +8,7 @@ import pickle
 import logging
 import numpy as np
 import faiss
-import openai
+from openai import OpenAI
 from typing import List, Tuple, Optional
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sklearn.metrics.pairwise import cosine_similarity
@@ -76,7 +76,7 @@ class KnowledgeBase:
 class EmbeddingManager:
     """Manages document embeddings using OpenAI API."""
     
-    def __init__(self, model: str = "text-embedding-ada-002"):
+    def __init__(self, model: str = "text-embedding-3-small"):
         """
         Initialize embedding manager.
         
@@ -85,6 +85,7 @@ class EmbeddingManager:
         """
         self.model = model
         self.embeddings: Optional[np.ndarray] = None
+        self.client = OpenAI(api_key=os.getenv('OPEN_API'))
     
     def embed_chunks(self, chunks: List[str]) -> np.ndarray:
         """
@@ -103,12 +104,12 @@ class EmbeddingManager:
             
             logger.info(f"Embedding {len(chunks)} chunks...")
             
-            response = openai.Embedding.create(
+            response = self.client.embeddings.create(
                 input=chunks,
                 model=self.model
             )
             
-            embeddings = [item["embedding"] for item in response["data"]]
+            embeddings = [item.embedding for item in response.data]
             self.embeddings = np.array(embeddings, dtype="float32")
             
             logger.info(f"Created embeddings with shape {self.embeddings.shape}")
@@ -129,11 +130,11 @@ class EmbeddingManager:
             NumPy array containing the query embedding
         """
         try:
-            response = openai.Embedding.create(
+            response = self.client.embeddings.create(
                 input=[query],
                 model=self.model
             )
-            embedding = np.array([response["data"][0]["embedding"]], dtype="float32")
+            embedding = np.array([response.data[0].embedding], dtype="float32")
             return embedding
             
         except Exception as e:

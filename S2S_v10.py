@@ -173,7 +173,36 @@ class VoiceAssistant:
     
     def listen_for_command(self, timeout: int = 12, phrase_limit: int = 20) -> Optional[str]:
         """
-        Listen for user command.
+        Listen for user command (text input mode).
+        
+        Args:
+            timeout: Unused (text mode)
+            phrase_limit: Unused (text mode)
+            
+        Returns:
+            User input text or None if failed
+        """
+        try:
+            logger.info("🎤 Waiting for input (type your message, or 'quit' to exit)...")
+            user_input = input("> ").strip()
+            
+            if user_input:
+                logger.info(f"✅ User input: {user_input}")
+                return user_input
+            else:
+                return None
+                
+        except EOFError:
+            logger.info("⛔ End of input")
+            self.in_conversation = False
+            return None
+        except Exception as e:
+            logger.error(f"❌ Input error: {e}")
+            return None
+    
+    def listen_for_command_voice(self, timeout: int = 12, phrase_limit: int = 20) -> Optional[str]:
+        """
+        Listen for user command via voice (requires PyAudio).
         
         Args:
             timeout: Maximum time to wait for speech
@@ -335,7 +364,7 @@ class VoiceAssistant:
             # Get response from Groq
             response = self.groq_client.chat.completions.create(
                 messages=messages,
-                model="gemma2-9b-it",
+                model="llama-3.1-8b-instant",
                 max_tokens=150,
                 temperature=0.7
             )
@@ -388,55 +417,58 @@ class VoiceAssistant:
         logger.info("🛑 Conversation ended")
     
     def listen_for_wake_word(self):
-        """Listen for wake word or prompt for manual start."""
-        if self.porcupine:
-            logger.info("👂 Voice Assistant started. Listening for 'Hey Bruce'...")
-            self._listen_for_wake_word_porcupine()
-        else:
-            logger.info("👂 Voice Assistant started (MANUAL MODE)")
-            logger.info("   Press ENTER to start a conversation")
-            self._listen_for_manual_start()
-    
-    def _listen_for_wake_word_porcupine(self):
-        """Listen for wake word using Porcupine."""
+        """
+        Continuously listen for "Hey Bruce" wake word using Porcupine.
+        On detection, starts a conversation.
+        """
+        logger.info("👂 Voice Assistant started - Listening for 'Hey Bruce'...")
+        
         try:
-            with sd.RawInputStream(
+            # Initialize audio stream for wake word detection
+            with sd.InputStream(
+                channels=1,
                 samplerate=self.porcupine.sample_rate,
                 blocksize=self.porcupine.frame_length,
-                dtype='int16',
-                channels=1
+                dtype=np.int16
             ) as stream:
                 
                 while True:
-                    if not self.in_conversation:
-                        # Read audio data
-                        pcm_data = stream.read(self.porcupine.frame_length)[0]
-                        pcm = struct.unpack_from("h" * self.porcupine.frame_length, pcm_data)
-                        
-                        # Process for wake word
-                        result = self.porcupine.process(pcm)
-                        
-                        if result >= 0:
-                            logger.info("🎯 Wake word detected!")
-                            self.start_conversation()
-                    else:
-                        time.sleep(0.1)
+                    # Read audio frame
+                    audio_frame, _ = stream.read(self.porcupine.frame_length)
+                    audio_frame = audio_frame.flatten().astype(np.int16)
+                    
+                    # Check for wake word
+                    keyword_index = self.porcupine.process(audio_frame)
+                    
+                    if keyword_index >= 0:
+                        logger.info("🎯 Wake word detected! Starting conversation...")
+                        self.start_conversation()
+                    
+                    # Small delay to prevent CPU overuse
+                    time.sleep(0.01)
                         
         except KeyboardInterrupt:
             logger.info("⛔ Voice assistant stopped by user")
         except Exception as e:
-            logger.error(f"❌ Wake word detection error: {e}")
+            logger.error(f"❌ Error in wake word detection: {e}")
+            logger.info("⏸️ Falling back to manual mode (press ENTER)...")
+            self._listen_for_manual_start()
         finally:
             self.cleanup()
     
     def _listen_for_manual_start(self):
-        """Listen for manual start (press Enter to begin)."""
+        """Fallback: Listen for manual start (press Enter to begin)."""
         try:
             while True:
                 if not self.in_conversation:
-                    input()  # Wait for Enter key
-                    logger.info("🎯 Starting conversation...")
-                    self.start_conversation()
+                    try:
+                        logger.info("   Press ENTER to start a conversation")
+                        input()
+                        logger.info("🎯 Starting conversation...")
+                        self.start_conversation()
+                    except EOFError:
+                        logger.info("⛔ Voice assistant stopped")
+                        break
                 else:
                     time.sleep(0.1)
                         
